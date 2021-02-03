@@ -22,15 +22,15 @@ const middle = (arr) => {
   }
 
   if (arr.length % 2 !== 0) { // odd
-    const midpoint = Math.floor(arr.length/2);
+    const midpoint = Math.floor(arr.length / 2);
     output.push(arr[midpoint]);
   } else if (arr.length % 2 === 0) { // even
-    const midpoint = arr.length/2;
+    const midpoint = arr.length / 2;
     output.push(arr[midpoint - 1]);
     output.push(arr[midpoint]);
   }
   return output;
-}
+};
 
 
 // console.log('single and double element arrays');

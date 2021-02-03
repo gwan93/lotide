@@ -27,7 +27,8 @@ const letterPositions = function(sentence) {
     }
   }
   return results;
-}
+};
 
 // letterPositions('hello');
 console.log(letterPositions('lighthouse in the house'));
+assertArraysEqual(letterPositions('lighthouse in the house')['h'], [3, 5, 15, 18]);

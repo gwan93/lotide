@@ -18,7 +18,7 @@ const countLetters = (str) => {
     }
   }
   return output;
-}
+};
 
 console.log(countLetters('LHL')); // L twice, H once
 console.log(countLetters('oowoomoo'));
@@ -27,7 +27,7 @@ let result = countLetters('LHL');
 assertEqual(result['L'], 2); // L twice, H once
 assertEqual(result['H'], 1); // L twice, H once
 
-result = countLetters('ass1333!@@@@@')
+result = countLetters('ass1333!@@@@@');
 assertEqual(result['a'], 1);
 assertEqual(result['s'], 2);
 assertEqual(result['1'], 1);
