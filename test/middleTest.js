@@ -1,12 +1,20 @@
-const assertArraysEqual = require('../assertArraysEqual');
+const assert = require('chai').assert;
 const middle = require('../middle');
 
-// console.log('single and double element arrays');
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []);
-// console.log('odd element arrays');
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-// console.log('even element arrays');
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+describe("#middle", () => {
+  it("should return an empty array for single element arrays", () => {
+    assert.deepEqual(middle([1]), [])
+  })
+
+  it("should return an empty array for double element arrays", () => {
+    assert.deepEqual(middle([1, 2]), []);
+  })
+
+  it("should return [2] for [1, 2, 3]", () => {
+    assert.deepEqual(middle([1, 2, 3]), [2]);
+  })
+
+  it("should return [2, 3] for [1, 2, 3, 4]", () => {
+    assert.deepEqual(middle([1, 2, 3, 4]), [2, 3]);
+  })
+});
