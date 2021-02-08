@@ -8,10 +8,10 @@ describe("#tail", () => {
 
   it("returns undefined for ['Hello']", () => {
     assert.deepEqual(tail(['Hello'], undefined));
-  })
+  });
 
   it("returns undefined for an empty array", () => {
     assert.deepEqual(tail([], undefined));
-  })
+  });
 });
 
